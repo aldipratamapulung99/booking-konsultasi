@@ -65,10 +65,6 @@ application/
 └── config/
     └── database.php
 
-assets/
-├── css/style.css
-└── js/app.js, students.js, supervisors.js, consultations.js
-
 database/
 └── booking_konsultasi.sql
 ```
@@ -91,9 +87,10 @@ isi topik, simpan booking, lihat daftar & status booking, ubah status, hapus.
    (divalidasi di database lewat `CHECK constraint` dan di controller).
 
 Logika pengecekan bentrok ada di `Consultation_model.php` (method
-`isSupervisorBusy()` dan `isStudentBusy()`), dipanggil dari `Consultations.php`
-baik saat live-check (`checkConflict()`) maupun saat `save()`/`update()` supaya
-validasi tidak bisa dilewati dari sisi client.
+`checkConflict()`, yang mengecek bentrok jadwal supervisor maupun student
+dalam satu method), dipanggil dari `Consultations.php` baik saat live-check
+(endpoint `checkConflict()`) maupun saat `save()`/`update()` supaya validasi
+tidak bisa dilewati dari sisi client.
 
 ## 7. Database — 3 Tabel & Relasi
 - **students** (1) — (N) **consultations** (N) — (1) **supervisors**
