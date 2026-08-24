@@ -100,10 +100,7 @@ class Consultations extends CI_Controller
         echo json_encode(["result" => true, "id" => $this->db->insert_id()]);
     }
 
-    // ===================== UPDATE DATA =====================
-    // Update data consultation
-    // @param POST: id, student_id, supervisor_id, consultation_date, start_time, end_time, topic, status, notes
-    // @return JSON (result) / (result, message) jika gagal
+   
     function update()
     {
         $data = json_decode(file_get_contents('php://input'), true);
