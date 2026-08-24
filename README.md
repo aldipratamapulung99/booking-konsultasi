@@ -15,12 +15,12 @@ Sistem memungkinkan pengguna untuk:
 
 ## 2. Teknologi
 | Komponen        | Teknologi |
-|------------------|-----------|
-| Backend          | PHP CodeIgniter 3 |
-| Database         | PostgreSQL |
-| Frontend         | Bootstrap 5, JavaScript / jQuery |
-| Arsitektur       | MVC (backend) & MVVM sederhana (frontend) |
-| Notifikasi UI    | SweetAlert2 |
+|-----------------|-----------|
+| Backend         | PHP CodeIgniter 3 |
+| Database        | PostgreSQL |
+| Frontend        | Bootstrap 5, JavaScript / jQuery |
+| Arsitektur      | MVC (backend) & MVVM sederhana (frontend) |
+| Notifikasi UI   | SweetAlert2 |
 
 ## 3. Architecture
 **Backend — MVC**
